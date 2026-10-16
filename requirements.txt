@@ -1,0 +1,10 @@
+# CryptoForecast AI — core dependencies
+# torch is installed separately (CPU wheel) by run.sh to avoid the ~2 GB CUDA build
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.5   # only needed to RETRAIN; inference uses portable JSON/NPZ
+joblib>=1.4
+xgboost>=2.0
+statsmodels>=0.14
+flask>=3.0
+pyarrow>=16
