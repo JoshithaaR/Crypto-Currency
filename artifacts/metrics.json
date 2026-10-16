@@ -1,0 +1,130 @@
+{
+  "feature_cols": [
+    "Open",
+    "High",
+    "Low",
+    "Close",
+    "Volume",
+    "SMA_7",
+    "EMA_7",
+    "SMA_14",
+    "EMA_14",
+    "SMA_30",
+    "EMA_30",
+    "RSI",
+    "MACD",
+    "MACD_Signal",
+    "Bollinger_Upper",
+    "Bollinger_Lower",
+    "Daily_Return",
+    "Volatility",
+    "Price_Change",
+    "Volume_Change",
+    "ret_lag1",
+    "ret_lag2",
+    "ret_lag3",
+    "ret_lag5",
+    "ret_lag7",
+    "ret_lag14",
+    "range_pct",
+    "upper_wick",
+    "lower_wick"
+  ],
+  "target": "Target_Close_t1",
+  "train_end": "2023-12-31",
+  "val_end": "2025-12-31",
+  "n_train": 2299,
+  "n_val": 731,
+  "n_test": 265,
+  "arima_order": [
+    2,
+    1,
+    2
+  ],
+  "lstm_epochs": 16,
+  "residual_q90": 3878.02,
+  "trained_at": "2026-09-25T06:26:04+00:00",
+  "val_metrics": {
+    "persistence": {
+      "mae": 1436.4,
+      "rmse": 1990.08,
+      "mape": 1.778,
+      "dir_acc": 0.0
+    },
+    "linear": {
+      "mae": 1460.02,
+      "rmse": 2008.0,
+      "mape": 1.8,
+      "dir_acc": 51.3
+    },
+    "random_forest": {
+      "mae": 22098.12,
+      "rmse": 29165.52,
+      "mape": 22.022,
+      "dir_acc": 50.5
+    },
+    "xgboost": {
+      "mae": 23246.43,
+      "rmse": 30250.89,
+      "mape": 23.338,
+      "dir_acc": 49.5
+    },
+    "arima": {
+      "mae": 2041.21,
+      "rmse": 2750.55,
+      "mape": 2.524,
+      "dir_acc": 51.6
+    },
+    "lstm": {
+      "mae": 20442.51,
+      "rmse": 26356.02,
+      "mape": 20.693,
+      "dir_acc": 50.3
+    }
+  },
+  "test_metrics": {
+    "linear": {
+      "mae": 1209.56,
+      "rmse": 1775.94,
+      "mape": 1.677,
+      "dir_acc": 50.6
+    },
+    "random_forest": {
+      "mae": 2358.88,
+      "rmse": 3075.37,
+      "mape": 3.209,
+      "dir_acc": 46.0
+    },
+    "xgboost": {
+      "mae": 1833.71,
+      "rmse": 2458.97,
+      "mape": 2.511,
+      "dir_acc": 49.4
+    },
+    "arima": {
+      "mae": 1819.07,
+      "rmse": 2471.84,
+      "mape": 2.509,
+      "dir_acc": 47.9
+    },
+    "lstm": {
+      "mae": 3356.84,
+      "rmse": 4339.64,
+      "mape": 4.545,
+      "dir_acc": 51.7
+    },
+    "persistence": {
+      "mae": 1200.69,
+      "rmse": 1758.09,
+      "mape": 1.66,
+      "dir_acc": null
+    },
+    "ensemble": {
+      "mae": 1857.13,
+      "rmse": 2492.41,
+      "mape": 2.535,
+      "dir_acc": 47.9
+    }
+  },
+  "residual_note": "90th pct |ensemble error| on held-out 2026 test (band sizing only)"
+}

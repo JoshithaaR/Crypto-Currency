@@ -1,0 +1,100 @@
+[
+  {
+    "target_date": "2026-10-12",
+    "created": "2026-10-12T08:48:04+00:00",
+    "basis_date": "2026-10-11",
+    "basis_close": 83773.12,
+    "ensemble": 85324.55,
+    "band90": {
+      "low": 81446.53,
+      "high": 89202.57,
+      "half": 3878.02
+    },
+    "expected_move_pct": 1.85,
+    "direction": "UP",
+    "agreement": {
+      "up": 4,
+      "down": 1,
+      "total": 5
+    },
+    "predictions": {
+      "linear": 83611.1,
+      "random_forest": 84759.58,
+      "xgboost": 84855.52,
+      "lstm": 88072.0,
+      "arima": 83776.35
+    },
+    "updated": "2026-10-12T08:48:04+00:00",
+    "source": "binance-vision (live)",
+    "live_at_call": 83626.0,
+    "graded": false
+  },
+  {
+    "target_date": "2026-10-05",
+    "created": "2026-10-05T18:16:58+00:00",
+    "basis_date": "2026-10-04",
+    "basis_close": 86530.0,
+    "ensemble": 88475.81,
+    "band90": {
+      "low": 84597.79,
+      "high": 92353.83,
+      "half": 3878.02
+    },
+    "expected_move_pct": 2.25,
+    "direction": "UP",
+    "agreement": {
+      "up": 4,
+      "down": 1,
+      "total": 5
+    },
+    "predictions": {
+      "linear": 86531.57,
+      "random_forest": 87645.67,
+      "xgboost": 88121.25,
+      "lstm": 91604.75,
+      "arima": 86528.46
+    },
+    "updated": "2026-10-05T18:21:07+00:00",
+    "source": "binance-vision (live)",
+    "live_at_call": 85472.05,
+    "graded": true,
+    "actual": 85766.87,
+    "abs_err": 2708.94,
+    "pct_err": 3.158,
+    "dir_correct": false
+  },
+  {
+    "target_date": "2026-09-25",
+    "created": "2026-09-25T06:29:25+00:00",
+    "basis_date": "2026-09-24",
+    "basis_close": 84410.24,
+    "ensemble": 86249.04,
+    "band90": {
+      "low": 82371.02,
+      "high": 90127.06,
+      "half": 3878.02
+    },
+    "expected_move_pct": 2.18,
+    "direction": "UP",
+    "agreement": {
+      "up": 4,
+      "down": 1,
+      "total": 5
+    },
+    "predictions": {
+      "linear": 84441.65,
+      "random_forest": 85351.89,
+      "xgboost": 85574.9,
+      "lstm": 89627.73,
+      "arima": 84390.68
+    },
+    "updated": "2026-09-25T08:46:34+00:00",
+    "source": "binance-vision (live)",
+    "live_at_call": 84305.75,
+    "graded": true,
+    "actual": 84099.99,
+    "abs_err": 2149.05,
+    "pct_err": 2.555,
+    "dir_correct": false
+  }
+]
